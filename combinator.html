@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* descendant selector (space) */
+        /* .a h1 {
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+
+        /* child selector (>) */
+
+        /* .a>h1 {
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+
+        /* adjacent sibling selector (+) */
+        /* .a+h1 {
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+
+        /* general sibling selector (~) */
+        /* .a~h1 {
+            color: brown;
+            background-color: cornflowerblue;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <span>
+            <h1>Lorem, ipsum dolor.</h1>
+            <span>Lorem ipsum dolor sit amet.</span>
+        </span>
+        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+    </div>
+    <h1>outer div 1</h1>
+    <h1>outer div 2</h1>
+    <span>span tag</span>
+    <h1>outer div 3</h1>
+</body>
+
+</html>
