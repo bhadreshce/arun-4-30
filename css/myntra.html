@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu {
+            display: flex;
+            background-color: white;
+            justify-content: space-between;
+            box-shadow: 2px 2px 6px black;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 20px;
+            transition: all 2s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .p-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .w-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            border-radius: 20px;
+            padding: 5px;
+            outline: none;
+            border: 0.1px solid black;
+        }
+
+        a:hover {
+            border-bottom: 4px solid pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img height="50px" width="80px" src="myntra.webp" alt="">
+        </div>
+        <div class="nav">
+            <a href="">MEN</a>
+            <a href="">WOMEN</a>
+            <a href="">KIDS</a>
+            <a href="">HOME & LIVING</a>
+            <a href="">BEAUTY</a>
+            <a style="margin-bottom: 3px;" href="">STUDIO <sup style="color: rgb(245 28 179)">NEW</sup></a>
+
+        </div>
+        <div class="search">
+            <input type="search">
+
+        </div>
+        <div class="icon">
+            <div class="profile">
+                <div class="p-icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="p-title">Profile</div>
+            </div>
+            <div class="wishlist">
+
+                <div class="w-icon">
+
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="w-title">
+                    wishlist
+                </div>
+            </div>
+            <div class="bag">
+                <div class="b-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <div class="b-title">Bag</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
