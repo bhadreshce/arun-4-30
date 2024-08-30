@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boll {
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            background-color: chocolate;
+            border-radius: 50%;
+            animation-name: roundBall;
+            animation-duration: 10s;
+            animation-delay: 2s;
+        }
+
+        @keyframes roundBall {
+            0% {
+                transform: translate(0px, 0px);
+            }
+
+            20% {
+                transform: translate(100px, 300px);
+            }
+
+            40% {
+                transform: translate(200px, -300px);
+            }
+
+            60% {
+                transform: translate(300px, 300px);
+            }
+
+            80% {
+                transform: translate(400px, -300px);
+            }
+
+            100% {
+                transform: translate(500px, 400px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="boll">
+
+    </div>
+
+</body>
+
+</html>
