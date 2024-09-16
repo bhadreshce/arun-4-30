@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .up {
+            height: 30px;
+            width: 180px;
+            border: 2px solid black;
+            position: relative;
+            background-image: url(up.PNG);
+            background-size: 100% 100%;
+            animation: openBox 1s ease forwards;
+            animation-delay: 3s;
+            transform-origin: bottom left;
+
+
+            /* top: 40%;
+            left: 40%; */
+        }
+
+        .down {
+            height: 110px;
+            width: 150px;
+            background-image: url(down.PNG);
+            background-size: 100% 100%;
+            border: 2px solid black;
+            position: relative;
+            left: 13px;
+            /* top: 46.5%;
+            left: 41.25%; */
+        }
+
+        .main {
+            position: absolute;
+            animation: skewBoX 1s ease forwards;
+            animation-delay: 2s;
+            top: 40%;
+            left: 40%;
+        }
+
+        .ballon {
+            background-image: url(ballon.gif);
+            background-size: 100% 100%;
+            top: 10px;
+            left: 35px;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            animation: ballon 3s ease forwards;
+            animation-delay: 3s;
+            /* z-index: 5; */
+        }
+
+
+
+        @keyframes skewBoX {
+
+            0% {
+                transform: rotate(0deg) translateY(0);
+            }
+
+            50% {
+                transform: rotate(30deg) translateY(0);
+            }
+
+            70% {
+                transform: rotate(0deg) translateY(-20px);
+                /* slight jump */
+            }
+
+            100% {
+                transform: rotate(0deg) translateY(0);
+                /* back to original position */
+            }
+        }
+
+
+        @keyframes openBox {
+            0% {
+                transform: translateY(0) translateX(0);
+            }
+
+            30% {
+                transform: translateY(-30px) rotate(-20deg);
+                /* move up and right */
+            }
+
+            60% {
+                transform: translateY(-120px) rotate(-20deg);
+                /* stay at the moved position */
+            }
+
+            100% {
+                transform: translateY(120px) translateX(-58px) rotate(-60deg);
+                /* back to original Y position but right */
+            }
+
+        }
+
+
+        @keyframes ballon {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+                transform: translateY(-200px);
+                height: 300px;
+                width: 200px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="ballon">
+
+        </div>
+        <div class="up">
+
+        </div>
+        <div class="down">
+
+        </div>
+    </div>
+</body>
+
+</html>
