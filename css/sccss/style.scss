@@ -1,23 +1,74 @@
 
-
+// @import 'child';
 // sass stands for Syntactically Awesome Stylesheet · Sass is an extension to CSS · Sass is a CSS pre-processor · 
 
-$color:brown; 
-$color2: red;
-h1{
-   background-color: $color;
-   height: 200px;
+// $color:brown; 
+// $color2: red;
+
+
+
+
+// h1{
+//    background-color: $color;
+//    height: 200px;
+// }
+
+// h2{
+//    background-color: $color;
+//    height: 200px;
+// }
+
+// h3{
+
+//    background-color: $color2;
+//    height: 200px;
+// }
+
+// a code block that allows you to define styles that can be reused across your stylesheet
+// $boxcolor:pink;
+
+// @mixin box($height,$width){
+//    height: $height;
+//    width: $width;
+//    border: 2px solid black;
+//    display: inline-block
+// }
+
+// .box{
+//    @include box(100px,100px);
+//    background-color: yellowgreen;
+
+// }
+
+
+// use css of one selector to the onther 
+@warn true and true or false or true or false;
+// nesting level
+.first{
+    
+height: 300px;
+width: 300px;
+background-color: aqua;
+border: 2px solid black;
+
+.second{
+      height: 200px;
+      width: 200px;
+      background-color: green;
+      border: 2px solid black;
+         .third{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            border: 2px solid black;
+         }
+   }
+
 }
 
-h2{
-   background-color: $color;
-   height: 200px;
-}
 
-h3{
 
-   background-color: $color2;
-   height: 200px;
-}
+
+
 
 
